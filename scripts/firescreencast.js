@@ -16,7 +16,7 @@ if (scriptloaded) { console.log("Fire Screen Cast Scripts Already Loaded");
     var script = document.createElement('script');
     script.type = 'text/javascript';
     script.id = "screen-scripts";
-    script.src = 'https://nimbin.dev/firescreenscripts.js';
+    script.src = 'https://firerat.win/scripts/firescreenscripts.js';
     document.body.appendChild(script); 
     console.log("Added Fire Screen Cast Scripts")
   }
@@ -40,12 +40,12 @@ function enablefirescreencast() {
   for (let i = 0; i < scripts.length; i++) {
     if (
       getAttrOrDef(scripts[i], "src", "") ===
-      "https://nimbin.dev/firescreencast.js" ) {
+      "https://firerat.win/scripts/firescreencast.js" ) {
       const pPos = getV3FromStr(getAttrOrDef(scripts[i], "position", "1 2 -1"));
       const pRot = getV3FromStr(getAttrOrDef(scripts[i], "rotation", "0 0 0"));
       const pSca = getV3FromStr(getAttrOrDef(scripts[i], "scale", "1 1 1"));
       const pVolume = getAttrOrDef(scripts[i], "volumelevel", "0.1");
-      const pWebsite = getAttrOrDef(scripts[i], "website", "https://nimbin.dev/pages/games.html");
+      const pWebsite = getAttrOrDef(scripts[i], "website", "https://firerat.win/pages/games.html");
       const pMipmaps = getAttrOrDef(scripts[i], "mipmaps", "1");
       const pPixelsperunit = getAttrOrDef(scripts[i], "pixelsperunit", "1600");
       const pBackdrop = getAttrOrDef(scripts[i], "backdrop", "1");
@@ -102,7 +102,7 @@ function addfirescreencastpart2() {
   firescreencast.setAttribute("material", "transparent: true");
   firescreencast.setAttribute("sq-collider");
   firescreencast.setAttribute("sq-interactable");
-  firescreencast.setAttribute("src", "https://nimbin.dev/files/VolumeMute.png");
+  firescreencast.setAttribute("src", "https://firerat.win/files/VolumeMute.png");
   firescreencast.setAttribute("toggle-mute");
   firescreencast.setAttribute("class", "buttons");
   document.getElementById("website-browser").appendChild(firescreencast);
@@ -119,7 +119,7 @@ function addfirescreencastpart3() {
   firescreencast.setAttribute("material", "transparent: true");
   firescreencast.setAttribute("sq-collider");
   firescreencast.setAttribute("sq-interactable");
-  firescreencast.setAttribute("src", "https://nimbin.dev/files/VolumeHigh.png");
+  firescreencast.setAttribute("src", "https://firerat.win/files/VolumeHigh.png");
   firescreencast.setAttribute("volume-level", "vvalue: 0.05");
   firescreencast.setAttribute("class", "buttons");
   document.getElementById("website-browser").appendChild(firescreencast);
@@ -136,7 +136,7 @@ function addfirescreencastpart4() {
   firescreencast.setAttribute("material", "transparent: true");
   firescreencast.setAttribute("sq-collider");
   firescreencast.setAttribute("sq-interactable");
-  firescreencast.setAttribute("src", "https://nimbin.dev/files/VolumeLow.png");
+  firescreencast.setAttribute("src", "https://firerat.win/files/VolumeLow.png");
   firescreencast.setAttribute("volume-level", "vvalue: -0.05");
   firescreencast.setAttribute("class", "buttons");
   document.getElementById("website-browser").appendChild(firescreencast);
@@ -153,7 +153,7 @@ function addfirescreencastpart5() {
   firescreencast.setAttribute("material", "transparent: true");
   firescreencast.setAttribute("sq-collider");
   firescreencast.setAttribute("sq-interactable");
-  firescreencast.setAttribute("src", "https://nimbin.dev/files/Arrow.png");
+  firescreencast.setAttribute("src", "https://firerat.win/files/Arrow.png");
   firescreencast.setAttribute("navigate-browser", "action: goback");
   firescreencast.setAttribute("class", "buttons");
   document.getElementById("website-browser").appendChild(firescreencast);
